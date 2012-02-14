@@ -1,8 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require File.expand_path('../../lib/pool', __FILE__)
+require 'eventmachine'
 require 'em-http-request'
+
+require File.expand_path('../../lib/pool', __FILE__)
 
 EM.run do
   pool = Pool.new { EM::HttpRequest.new('http://www.google.com') }

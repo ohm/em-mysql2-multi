@@ -1,5 +1,3 @@
-require 'eventmachine'
-
 class Pool
   attr_reader :size
 
