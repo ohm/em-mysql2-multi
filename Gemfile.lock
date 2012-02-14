@@ -1,0 +1,22 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.6)
+    em-http-request (1.0.0.beta.3)
+      addressable (>= 2.2.3)
+      em-socksify
+      eventmachine
+      http_parser.rb (>= 0.5.1)
+    em-socksify (0.1.0)
+      eventmachine
+    eventmachine (0.12.10)
+    http_parser.rb (0.5.3)
+    mysql2 (0.3.11)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  em-http-request
+  eventmachine
+  mysql2
